@@ -3,12 +3,14 @@ var currentTab2 = 0;
 var currentTab3 = 0;
 var currentTab4 = 0;
 var currentTab5 = 0;
+var currentTab6 = 0;
 document.addEventListener("DOMContentLoaded", function(event) {
     showTab(currentTab, "tab", "prevBtn", "nextBtn","step" );
     showTab(currentTab2, "tab2", "prevBtn2", "nextBtn2","step-2" );
     showTab(currentTab3, "tab3", "prevBtn3", "nextBtn3","step-3" );
     showTab(currentTab4, "tab4", "prevBtn4", "nextBtn4","step-4" );
-    showTab(currentTab4, "tab5", "prevBtn5", "nextBtn5","step-5" );
+    showTab(currentTab5, "tab5", "prevBtn5", "nextBtn5","step-5" );
+    showTab(currentTab6, "tab6", "prevBtn6", "nextBtn6","step-6" );
 });
 
 function showTab(n, tab, buttonPrev, buttonNext, step) {
@@ -75,7 +77,7 @@ window.onload = function(){
 
     $(".tab4").children().children().children().children().css("font-size", 13);
 
-    $("#exampleModa4,#exampleModa3, #exampleModa2,#exampleModal,#exampleModa5").on("hidden.bs.modal", function () {
+    $("#exampleModa4,#exampleModa3,#exampleModa2,#exampleModal,#exampleModa5,#examplemoda6").on("hidden.bs.modal", function () {
         
         location.reload();
 

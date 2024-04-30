@@ -7,6 +7,7 @@
     text-decoration: none;
 
 }
+
 .html {
     width: 100vw;
     height: 100vw;
@@ -44,7 +45,7 @@
     width: 100%;
     height: 100%;
     margin-left: -40rem;
-    }
+}
 
 .content .lista-menu {
     width: 600px;
@@ -67,23 +68,13 @@
     color: #ff7606;
 }
 
-/*first-section*/
+/*first-section
 .first-section {
     height: 70vh;
-}
+}*/
 
-  .img-center{
-    background-image:/*linear-gradient(to bottom, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),*/ url("batutta.png");
-    height: 30vh;
-    background-position: center center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+
+
 .first-section .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -107,7 +98,7 @@
 }
 
 .first-section h3 {
-    color:#45150d;
+    color: #45150d;
 }
 
 /*Sobre nós
@@ -131,7 +122,7 @@
     justify-content: space-between;
 }
 
-.sobrenos-class{
+.sobrenos-class {
     background-color: #1f1e1f;
     color: white;
 }
@@ -140,16 +131,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;;
+    justify-content: space-between;
+    ;
 
 }
 
-.contentsobre  {
+.contentsobre {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.contentsobre  {
+.contentsobre {
     text-align: center;
     font-size: 1.8rem;
     width: 700px;
@@ -164,7 +156,7 @@
     background-color: #ff7606;
 }
 
-.cardapio  {
+.cardapio {
     font-size: 3rem;
     color: #45150d;
     text-transform: uppercase;
@@ -184,30 +176,30 @@
 .itens-cardapio .info {
     background-color: #5e52526f;
     border: none;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     padding: 1.5rem;
 }
 
-.itens-cardapio .info h4{
+.itens-cardapio .info h4 {
     color: white;
     font-size: 1.4rem;
     text-transform: uppercase;
     margin-bottom: 0.6rem;
-    display: grid; 
+    display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 320px 50px;
 }
 
 
-.class-conplemento-acai{
+.class-conplemento-acai {
     color: white;
     font-size: 1.0rem;
     text-transform: uppercase;
-    margin-bottom: 0.6rem; 
+    margin-bottom: 0.6rem;
     justify-content: center;
     align-items: center;
     grid-template-columns: 320px 50px;
@@ -285,7 +277,8 @@ input.invalid {
 .tab2,
 .tab3,
 .tab4,
-.tab5 {
+.tab5,
+.tab6 {
     display: none
 }
 
@@ -344,7 +337,7 @@ button:hover {
     margin-left: 5px;
     margin-bottom: 12px;
     /*cursor: pointer;*/
-    font-size: 15px;
+    font-size: 23px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -422,12 +415,68 @@ button:hover {
 div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
-  }
-  
-  div.scrollmenu a {
+}
+
+div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px;
     text-decoration: none;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("batutta.png");
+  
+    /* Set a specific height */
+    max-width:200px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+    /* Create the parallax scrolling effect 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
   }
+  
+
+
+#spaceText {
+    padding-right: 16px;
+}
+
+.img-center {
+    margin-top: 200px;
+    background-image: url("batutta.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDiv{
+  
+   /*cor apenas para exmplo*/
+   color: #fff;
+}
+/*
+.img-center {
+    background-image:
+        linear-gradient(to bottom, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),
+        url("batutta.png");
+    height: 30vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}*/
