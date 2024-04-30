@@ -7,43 +7,55 @@
     <link rel="stylesheet" href="styless.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>battuta</title>
-    <link rel='stylesheet' href="styless.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="content">
-        <div class="logo">
-            <img src="batutta.html.png" class="img-fluid img-thumbnail img-topo">
-            <h3>battuta</h3>
+    <header>
 
-        </div>
-        <nav>
-            <ul class="lista-menu">
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#"><i class="bi bi-cart4"></i></a></li>
+        <nav class="navbar navbar-expand-lg content" style="background-color: #540F09; ">
+            <img src="batutta.html.png" class="img-fluid img-thumbnail img-topo" style="height: 100px;">
 
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto"> </ul>
+                <form class="form-inline my-3 my-lg-0 ">
+                    <ul class="nav col-12 col-lg-auto my-3 my-md-0">
+                        <li><a class="nav-link text-white " href="#sobrenos" style="font-size: 50px;">Sobre nós</a></li>
+                        <li><a class="nav-link  text-white" style="font-size: 50px;"
+                                href="https://www.instagram.com/battuta_1/" target="_blank"><i
+                                    class="bi bi-instagram"></i></a></li>
+                        <li><a class="nav-link  text-white" href="#" style="font-size: 50px;"><i
+                                    class="bi bi-cart4"></i></a></li>
+                    </ul>
+                </form>
+            </div>
         </nav>
     </header>
     <section class="first-section">
-        <div class="conteudo-principal">
-            <h1>Deixe seu dia mais saboroso!!!</h1>
-            <h2>Os melhores milk shakes e açaís da região</h2>
-            <h3>taxa de entrega: R$03,00</h3>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <img src="batutta.png" class="img-fluid img-thumbnail img-topo">
+                <div class=" ">
+                    <div class="conteudo-principal">
+                        <h1>Deixe seu dia mais saboroso!!!</h1>
+                        <h2>Os melhores milk shakes e açaís da região</h2>
+                        <h3>taxa de entrega: R$03,00</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-
-
     <section class="cardapio" id="cardapio">
         <h2>Cardápio</h2>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="itens-cardapio">
                         <div class="sundae">
                             <div class="info">
@@ -120,7 +132,7 @@
                             <img src="cupuacu.html.jpg" class="img-fluid img-thumbnail" alt="">
 
                             <button type="button" class="btn btn-primary" data-toggle="modal"
-                                data-target="#exampleModal">
+                                data-target="#exampleModa5">
                                 PEÇA SUA CASQUINHA
                             </button>
                             <h2>CASQUINHAS</h2>
@@ -303,8 +315,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="itens-cardapio">
+                        <div class="outros">
+                            <div class="info">
+                                <img src="sundae.html.jpg" class="img-fluid img-thumbnail" alt="">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModa2">
+                                    FAÇA SEU PEDIDO
+                                </button>
+                                <h2>OUTROS</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6 text-right">
+                                            <span class="class-conplemento-acai">●&nbsp;Petit Gateau</span>
+                                            <br />
+                                            <span class="class-conplemento-acai">●&nbsp;Banana Split</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="class-conplemento-acai">R$15,00</span><br>
+                                            <span class="class-conplemento-acai">R$15,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="itens-cardapio">
                         <div class="info">
                             <img src="acai.html.jpg" class="img-fluid img-thumbnail" alt="">
@@ -665,37 +703,50 @@
             </div>
         </div>
     </section>
-    <section class="sobre-nos" id="sobrenos">
-        <div class="main">
-            <div class="contentsobre">
-                <h2>Sobre nós</h2>
-                <p>Bem-vindo ao battuta milkshakes e açaí, onde a paixão pela criação de milk shakes deliciosos encontra
-                    a dedicação em proporcionar experiências memoráveis aos nossos clientes. Desde a nossa fundação,
-                    temos nos empenhado em elevar o padrão do milk shake tradicional, oferecendo uma variedade de
-                    sabores únicos e irresistíveis. Junte-se a nós nesta jornada de sabores e diversão. Explore nosso
-                    cardápio, descubra novos sabores e deixe-se levar pela magia dos nossos milk shakes, açaís e muito
-                    mais. Obrigado por nos escolher, considerada a melhor empresa de milkshakes pela topuai de
-                    sacramento, estamos ansiosos para servi-lo e tornar cada visita uma experiência verdadeiramente
-                    inesquecível.<br />
-                    Abertos de segunda a segunda das 12:00 ás 22:00<br />
-                    Fazemos entregas todos os dias! Apartir das 13:00 as 21:00<br />
-                    Av. Cap. Borges,3 - Sacramento,MG 38190000, Brasil<br />
-                    Tel: 34 984292873. Não atendemos chamadas via whatsap!</p>
-
+    <section class="sobrenos-class" id="sobrenos">
+        <h2 class="text-center">Sobre nós</h2>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-left">
+                    <p class="p-sobrenos">Bem-vindo ao battuta milkshakes e açaí, onde a paixão pela criação de milk
+                        shakes deliciosos
+                        encontra
+                        a dedicação em proporcionar experiências memoráveis aos nossos clientes. Desde a nossa
+                        fundação,
+                        temos nos empenhado em elevar o padrão do milk shake tradicional, oferecendo uma variedade
+                        de
+                        sabores únicos e irresistíveis. </p>
+                    <p>Junte-se a nós nesta jornada de sabores e diversão. Explore
+                        nosso
+                        cardápio, descubra novos sabores e deixe-se levar pela magia dos nossos milk shakes, açaís e
+                        muito
+                        mais. Obrigado por nos escolher, considerada a melhor empresa de milkshakes pela topuai de
+                        sacramento, estamos ansiosos para servi-lo e tornar cada visita uma experiência
+                        verdadeiramente
+                        inesquecível.</p>
+                    <p>
+                        Abertos de segunda a segunda das 12:00 ás 22:00<br />
+                        Fazemos entregas todos os dias! Apartir das 13:00 as 21:00<br />
+                        Av. Cap. Borges,3 - Sacramento,MG 38190000, Brasil<br />
+                        Tel: 34 984292873. Não atendemos chamadas via whatsap!</p>
+                </div>
+                <div class="col-12 col-sm-6  justify-content-right">
+                    <div class="img-local"></div>
+                    <img src="local.html.jpg" class="img-fluid img-thumbnail" alt="">
+                </div>
             </div>
-            <div class="img-local"></div>
-            <img src="local.html.jpg" alt="">
         </div>
-    </section>
-
-    <section class="contatos" id="contatos">
-        <h3>Contatos</h3>
-        <div class="contatos-secao">
-            <div>
-                <i class="bi bi-whatsapp"></i>
-                <span>(34) 984292873</span>
+        <div class="text-center" style="color: white;">
+            <h3>Contatos</h3>
+            <div class="contatos-secao">
+                <div>
+                    <i class="bi bi-whatsapp"></i>
+                    <span><a href="#">(34) 984292873</a></span><br/><br/>
+                </div>
             </div>
         </div>
+        <br/><br/>
     </section>
 
     <!-- Modal -->
@@ -1695,6 +1746,94 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade bd-example-modal-lg" id="exampleModa5" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bem vindo!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="">
+                                <form id="regForm5">
+                                    <h1 id="register5">Faça seu pedido:</h1>
+                                    <div class="all-steps-5" id="all-steps-5"> <span class="step-5"></span>
+                                        <span class="step-5"></span> <span class="step-5"></span> <span
+                                            class="step-5"></span>
+                                    </div>
+                                    <div class="tab5">
+                                        <h3 class="text-center">CASQUINHAS:</h3>
+                                        <label class="container">Casquinha
+                                            <input type="radio" checked="checked" name="Casquinha">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">Cascão
+                                            <input type="radio" name="Cascao">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">Cascão c/ Borda de Chocolate
+                                            <input type="radio" name="Cascao_borda_chocolate">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="tab5">
+                                        <h3 class="text-center">Sabores:</h3>
+                                        <div class="container-fluid">
+                                            <div class="row" style="font-size: small;">
+                                                <div class="col-3 ">
+                                                    <label class="container">Chocolate
+                                                        <input type="radio" checked="checked" name="Chocolate">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="container">Baunilha
+                                                        <input type="radio" name="Baunilha">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                    <label class="container">Misto
+                                                        <input type="radio" name="Misto">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab5">
+                                        <p><input placeholder="Nome:" oninput="this.className = ''" name="first"></p>
+                                        <p><input placeholder="Telefone:" oninput="this.className = ''" name="phone">
+                                        </p>
+                                        <p><input placeholder="Endereço e número:" oninput="this.className = ''"
+                                                name="address">
+                                        </p>
+                                    </div>
+                                    <div class="thanks-message text-center" id="text-message5">
+                                        <h3>Obrigado pela preferência!</h3> <span>Seu pedido foi
+                                            anotado, em breve
+                                            enviaremos para você :) </span>
+                                    </div>
+
+                                    <div style="overflow:auto;" id="nextprevious5">
+                                        <div style="float:right;"> <button type="button" id="prevBtn5"
+                                                onclick="nextPrev(-1, 'tab5', 'nextprevious5', 'all-steps-5', 'register5', 'text-message5', 'step-5', 'prevBtn5', 'nextBtn5')">Anterior</button>
+                                            <button type="button" id="nextBtn5"
+                                                onclick="nextPrev(1, 'tab5', 'nextprevious5', 'all-steps-5', 'register5', 'text-message5', 'step-5', 'prevBtn5', 'nextBtn5')">Próximo</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

@@ -7,11 +7,6 @@
     text-decoration: none;
 
 }
-
-.first-section {
-    background-color: #ff7606;
-}
-
 .html {
     width: 100vw;
     height: 100vw;
@@ -21,8 +16,6 @@
 
 /*menu*/
 .content {
-    width: 100vw;
-    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,7 +30,7 @@
 .logo {
     width: 70px;
     height: auto;
-    cursor: pointer;
+    /*cursor: pointer;*/
     display: flex;
     align-items: center;
 }
@@ -77,18 +70,20 @@
 /*first-section*/
 .first-section {
     height: 70vh;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(batutta.html.png);
+}
+
+  .img-center{
+    background-image:/*linear-gradient(to bottom, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),*/ url("batutta.png");
+    height: 30vh;
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
-    background-position-y: -450px;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
+  }
 .first-section .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -115,7 +110,7 @@
     color:#45150d;
 }
 
-/*Sobre nós*/
+/*Sobre nós
 .sobre-nos {
     background-color: #1f1e1f;
     width: 100%;
@@ -126,33 +121,35 @@
     justify-content: center;
 }
 
-.sobre-nos img {
-    width: 400px;
-    height: 400px;
+.sobre-nos {
     margin-top: 10rem;
-    margin-left: 10rem;
     border: 2px solid rgb(155, 155, 155);
-}
+}*/
 
 .main {
     display: flex;
     justify-content: space-between;
 }
 
+.sobrenos-class{
+    background-color: #1f1e1f;
+    color: white;
+}
+
 .contentsobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;;
 
 }
 
-.contentsobre h2 {
+.contentsobre  {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.contentsobre p {
+.contentsobre  {
     text-align: center;
     font-size: 1.8rem;
     width: 700px;
@@ -160,7 +157,6 @@
 
 /*Cardápio*/
 .cardapio {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,8 +164,7 @@
     background-color: #ff7606;
 }
 
-.cardapio h2 {
-    
+.cardapio  {
     font-size: 3rem;
     color: #45150d;
     text-transform: uppercase;
@@ -230,7 +225,7 @@
     background-color: #00518b;
     border-radius: 5px;
     text-transform: uppercase;
-    cursor: pointer;
+    /*cursor: pointer;*/
     color: black;
     transition: all 200ms ease-in;
 }
@@ -289,7 +284,8 @@ input.invalid {
 .tab,
 .tab2,
 .tab3,
-.tab4 {
+.tab4,
+.tab5 {
     display: none
 }
 
@@ -346,7 +342,7 @@ button:hover {
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
