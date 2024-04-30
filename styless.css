@@ -341,15 +341,19 @@ button:hover {
     text-align: center;
     position: relative;
     padding-left: 35px;
+    margin-left: 5px;
     margin-bottom: 12px;
     /*cursor: pointer;*/
-    font-size: 22px;
+    font-size: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
+.verybigmodal {
+    max-width: 90%;
+}
 
 /* Hide the browser's default radio button */
 
@@ -413,3 +417,17 @@ button:hover {
     border-radius: 50%;
     background: white;
 }
+
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
