@@ -25,11 +25,12 @@ function showTab(n, tab, buttonPrev, buttonNext, step) {
         } else {
             document.getElementById(buttonPrev).style.display = "inline";
         }
+
         if (n == (x.length - 1)) {
-            document.getElementById(buttonNext).innerHTML = "Enviar";
-        } else {
-            document.getElementById(buttonNext).innerHTML = "Próximo";
-        }
+            document.getElementById(buttonPrev).style.display = "none";
+            document.getElementById(buttonNext).style.display = "none";
+        } 
+
         fixStepIndicator(n, step);
     } catch (e) {
         console.log(e.error)
@@ -39,19 +40,18 @@ function showTab(n, tab, buttonPrev, buttonNext, step) {
 function nextPrev(n, tab, nextPrevious, allSteps, register, textMessage, step, buttonPrev, buttonNext) {
     console.log(textMessage)
     var x = document.getElementsByClassName(tab);
-    if (n == 1 && !validateForm(tab, step)) return false;
 
     x[currentTab].style.display = "none";
     currentTab = currentTab + n;
-    if (currentTab >= x.length) {
+    console.log(currentTab + " " + (x.length - 1));
+    if (currentTab == (x.length - 1)) {
         // document.getElementById("regForm").submit();
         // return false;
         //alert("sdf");
         document.getElementById(nextPrevious).style.display = "none";
         document.getElementById(allSteps).style.display = "none";
         document.getElementById(register).style.display = "none";
-        document.getElementById(textMessage).style.display = "block";
-
+       
         // ALTERA AQUI CADA VEZ QUE CRIAR UMA FUNÇÃO NOVA , APONTE PARA A TAB DO MODAL QUE TA ABRINDO
         switch (tab) {
             case "tab":
@@ -130,6 +130,11 @@ function limpaPedido() {
     location.reload();
 }
 
+function enderecoPedido(){
+    $(".info-pedido").hide();
+    $(".pedido-endereco").show();
+}
+
 function finalizaPedido() {
     let valorFinal = 3;
     pedidos = JSON.parse(localStorage.getItem("pedidos"));
@@ -156,7 +161,7 @@ function finalizaPedido() {
 function pedidoCasquinha() {
 
     let tipoCasquinha = $('input[name=tipoCasquinha]:checked').val();
-    let saborCasquinha = $('input[name=saborCasquinha]:checked').val(); //alterar aqui
+    let saborCasquinha = returnComplementValues('.input_value_casquinha'); //alterar aqui
 
     const casquinhas = [];
     casquinhas["Casquinha"] = { 'valor': 4, 'descricao': 'Casquinha' };
@@ -165,7 +170,7 @@ function pedidoCasquinha() {
 
     let pedido = {
         "tipoPedido": tipoCasquinha,
-        "sabor": saborCasquinha, //alterar aqui
+        "sabor": JSON.stringify(saborCasquinha), //alterar aqui
         "valor": casquinhas[tipoCasquinha].valor,
         "descricao": casquinhas[tipoCasquinha].descricao
     }
@@ -185,7 +190,7 @@ function formatNumberMonetario(valorFinal) {
 function pedidoOutros() {
 
     let tipoOutros = $('input[name=tipoOutros]:checked').val();
-    let conf_Outros = $('input[name=conf_Outros]:checked').val();
+    let conf_Outros = returnComplementValues('.input_value_Outros');
 
     const outros = [];
     outros["PetitGateau"] = { 'valor': 15, 'descricao': 'Petit Gateau' };
@@ -193,7 +198,7 @@ function pedidoOutros() {
 
     let pedido = {
         "tipoPedido": tipoOutros,
-        "sabor": conf_Outros,
+        "sabor": JSON.stringify(conf_Outros),
         "valor": outros[tipoOutros].valor,
         "descricao": outros[tipoOutros].descricao
     }
@@ -273,7 +278,6 @@ function pedidoCupuacu() {
     Cupuacu["400ml"] = { 'valor': 15, 'descricao': 'Cupuaçu 400ml' };
     Cupuacu["500ml"] = { 'valor': 18, 'descricao': 'Cupuaçu 500ml' };
     Cupuacu["700ml"] = { 'valor': 25, 'descricao': 'Cupuaçu 700ml' };
-    //Cupuacu["leiteNinho"] = { 'valor': 3, 'descricao': 'leiteNinho' };
 
     let pedido = {
         "tipoPedido": tipoCupuacu,
@@ -315,7 +319,7 @@ function formatNumberMonetario(valorFinal) {
 function pedidoMilkShake() {
 
     let tipoMilshake = $('input[name=tipoMilkshake]:checked').val();
-    let saborMilkShake = $('input[name=saborMilkshake]:checked').val();
+    let saborMilkShake = returnComplementValues('.input_value_milkShake');
 
     const milkShakes = [];
     milkShakes["300ml"] = { 'valor': 8, 'descricao': 'Milk Shake 300ml' };
@@ -324,7 +328,7 @@ function pedidoMilkShake() {
 
     let pedido = {
         "tipoPedido": tipoMilshake,
-        "sabor": saborMilkShake,
+        "sabor": JSON.stringify(saborMilkShake),
         "valor": milkShakes[tipoMilshake].valor,
         "descricao": milkShakes[tipoMilshake].descricao
     }
@@ -346,7 +350,7 @@ function formatNumberMonetario(valorFinal) {
 function pedidoAcai() {
 
     let tipoAcai = $('input[name=tipoAcai]:checked').val();
-    let complAcai = $('input[name=complAcai]:checked').val();
+    let complAcai = returnComplementValues('.input_value_acai');
 
     const acais = [];
     acais["300ml"] = { 'valor': 12, 'descricao': 'Açaí 300ml' };
@@ -356,7 +360,7 @@ function pedidoAcai() {
 
     let pedido = {
         "tipoPedido": tipoAcai,
-        "sabor": complAcai,
+        "sabor": JSON.stringify(complAcai),
         "valor": acais[tipoAcai].valor,
         "descricao": acais[tipoAcai].descricao
     }
