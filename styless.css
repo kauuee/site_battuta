@@ -68,13 +68,6 @@
     color: #ff7606;
 }
 
-/*first-section
-.first-section {
-    height: 70vh;
-}*/
-
-
-
 .first-section .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -100,22 +93,6 @@
 .first-section h3 {
     color: #45150d;
 }
-
-/*Sobre nós
-.sobre-nos {
-    background-color: #1f1e1f;
-    width: 100%;
-    padding-bottom: 5rem;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sobre-nos {
-    margin-top: 10rem;
-    border: 2px solid rgb(155, 155, 155);
-}*/
 
 .main {
     display: flex;
@@ -214,7 +191,7 @@
 }
 
 
-.class-conplemento-acai {
+.class-complemento-acai {
     color: white;
     font-size: 1.0rem;
     text-transform: uppercase;
@@ -370,7 +347,6 @@ button:hover {
     padding-left: 35px;
     margin-left: 5px;
     margin-bottom: 12px;
-    /*cursor: pointer;*/
     font-size: 23px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -389,7 +365,6 @@ button:hover {
     opacity: 0;
     cursor: pointer;
 }
-
 
 /* Create a custom radio button */
 
@@ -449,6 +424,7 @@ button:hover {
 div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
+    font-size: 50px !important;
 }
 
 div.scrollmenu a {
@@ -495,25 +471,8 @@ div.scrollmenu a {
 }
 
 .textDiv{
-  
-   /*cor apenas para exmplo*/
    color: #fff;
 }
-/*
-.img-center {
-    background-image:
-        linear-gradient(to bottom, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)),
-        url("batutta.png");
-    height: 30vh;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}*/
 
 .text-pedido-final{
     font-weight: bold;
