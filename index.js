@@ -106,7 +106,7 @@ function fixStepIndicator(n, step) {
 }
 
 window.onload = function () {
-    $(".tab").children().children().children().children().css("font-size", 13);
+   // $(".tab").children().children().children().children().css("font-size", 13);
     $("#exampleModa4,#exampleModa3,#exampleModa2,#exampleModal,#exampleModa5,#examplemoda6").on("hidden.bs.modal", function () {
         location.reload();
     });
@@ -375,4 +375,10 @@ function pedidoAcai() {
 
 function formatNumberMonetario(valorFinal) {
     return valorFinal.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+}
+
+function checkRadioInput(element){
+    let controlchecked = $(element).data("controlchecked");
+    element.checked = controlchecked ? false : true;
+    $(element).data("controlchecked", !controlchecked);
 }

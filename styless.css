@@ -420,13 +420,6 @@ button:hover {
     background: white;
 }
 
-
-div.scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-    font-size: 50px !important;
-}
-
 div.scrollmenu a {
     display: inline-block;
     color: white;

@@ -212,7 +212,7 @@
                                         <span class="class-complemento-acai">●&nbsp;Mel</span>
                                         <br />
                                         <span class="class-complemento-acai">●&nbsp;Banana</span>
-                                    
+
                                     </div>
                                     <div class="col-4 col-sm-1 text-left">
                                         <span class="class-complemento-acai">R$03,50</span>
@@ -226,9 +226,9 @@
                                         <span class="class-complemento-acai">R$02,00</span>
                                         <br />
                                         <span class="class-complemento-acai">R$02,00</span>
-                                  
+
                                     </div>
-                                  <div class="col-12 col-sm-1 ml-1"></div>
+                                    <div class="col-12 col-sm-1 ml-1"></div>
                                     <div class="col-8 col-sm-4 text-left">
                                         <span class="class-complemento-acai">●&nbsp;Sorvete</span>
                                         <br />
@@ -242,7 +242,7 @@
                                         <br />
                                         <span class="class-complemento-acai">●&nbsp;Coco Ralado</span>
                                     </div>
-                                 
+
                                     <div class="col-4 col-sm-1 text-left">
                                         <span class="class-complemento-acai">R$03,00</span>
                                         <br />
@@ -1216,13 +1216,15 @@
                                                 <div class="col-6">
                                                     <label class="container">Leite Ninho
                                                         <input type="radio" checked="checked" name="complAcai1"
-                                                            value="LeiteNinho" class="input_value_acai"
-                                                            data-price="3.5">
+                                                            value="LeiteNinho" class="input_value_acai" data-price="3.5"
+                                                            onclick="checkRadioInput(this)" data-controlchecked="true">
+                                                        <!-- acrescentar esses dois caras onclick="checkRadioInput(this)" data-controlchecked="true" -->
                                                         <span class="checkmark"></span>
                                                     </label>
                                                     <label class="container">Granola
                                                         <input type="radio" name="complAcai2" value="Granola"
-                                                            class="input_value_acai" data-price="3.5">
+                                                            class="input_value_acai" data-price="3.5"
+                                                            onclick="checkRadioInput(this)" data-controlchecked="false">
                                                         <span class="checkmark"></span>
                                                     </label>
                                                     <label class="container">Castanha
@@ -1653,7 +1655,8 @@
                                                 class="input_value_milkShake" data-price="0">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="container" style="font-size: 15px;">&nbsp;&nbsp;Leites Morango e Côco
+                                        <label class="container" style="font-size: 15px;">&nbsp;&nbsp;Leites Morango e
+                                            Côco
                                             <input type="radio" name="saborMilkshake" value="LeitesdeMorangoECoco"
                                                 class="input_value_milkShake" data-price="0">
                                             <span class="checkmark"></span>
@@ -1750,7 +1753,8 @@
                                                 class="input_value_milkShake" data-price="0">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="container" style="font-size: 13px;">&nbsp;&nbsp;&nbsp;Brigadeiro /Leite Condensado
+                                        <label class="container" style="font-size: 13px;">&nbsp;&nbsp;&nbsp;Brigadeiro
+                                            /Leite Condensado
                                             <input type="radio" name="saborMilkshake"
                                                 value="BrigadeirocomLeiteCondensado" class="input_value_milkShake"
                                                 data-price="0">
@@ -1818,7 +1822,8 @@
                                                 class="input_value_milkShake" data-price="0">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="container" style="font-size: 15px;">&nbsp;&nbsp;Grego Frutas Vermelhas
+                                        <label class="container" style="font-size: 15px;">&nbsp;&nbsp;Grego Frutas
+                                            Vermelhas
                                             <input type="radio" name="saborMilkshake" value="GregoFrutasVermelhas"
                                                 class="input_value_milkShake" data-price="0">
                                             <span class="checkmark"></span>
@@ -1979,12 +1984,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div style="overflow:auto;" id="nextprevious4">
-                                        <div style="float:right;"> <button type="button" id="prevBtn4"
-                                                onclick="nextPrev(-1, 'tab4', 'nextprevious4', 'all-steps-4', 'register4', 'text-message4', 'step-4', 'prevBtn4', 'nextBtn4')">Anterior</button>
-                                            <button type="button" id="nextBtn4"
-                                                onclick="nextPrev(1, 'tab4', 'nextprevious4', 'all-steps-4', 'register4', 'text-message4', 'step-4', 'prevBtn4', 'nextBtn4')">Próximo</button>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div style="overflow:auto;" id="nextprevious4">
+                                            <div style="float:right;"> <button type="button" id="prevBtn4"
+                                                    onclick="nextPrev(-1, 'tab4', 'nextprevious4', 'all-steps-4', 'register4', 'text-message4', 'step-4', 'prevBtn4', 'nextBtn4')">Anterior</button>
+                                                <button type="button" id="nextBtn4"
+                                                    onclick="nextPrev(1, 'tab4', 'nextprevious4', 'all-steps-4', 'register4', 'text-message4', 'step-4', 'prevBtn4', 'nextBtn4')">Próximo</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2146,7 +2153,11 @@
                                     <div class="tab6">
                                         <h3>Obrigado pela preferência!</h3> <span>Seu pedido foi
                                             anotado, em breve
-                                            enviaremos para você :) </span>
+                                            enviaremos para você
+                                            <i class="fa-regular fa-face-smile-wink fa-xl		"></i>
+                                            <i class="fa-solid fa-heart fa-beat"
+                                                style="--fa-animation-duration: 0.5s;"></i>
+                                        </span>
                                         <br />
                                         <div class="text-center">
                                             <div class="info-pedido">
@@ -2208,6 +2219,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="index.js"></script>
 </body>
 
