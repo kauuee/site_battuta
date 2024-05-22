@@ -94,6 +94,13 @@
     color: #45150d;
 }
 
+.first-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 .main {
     display: flex;
     justify-content: space-between;
@@ -133,29 +140,29 @@
     background-color: #D2691E;
 }
 
- .background-values{
+.background-values {
     background-color: #00518b;
     border: 2px solid #45150d;
-  padding: 10px;
-  border-radius: 25px;
- }
+    padding: 10px;
+    border-radius: 25px;
+}
 
- .background-values2{
+.background-values2 {
     background-color: #D2691E;
     border: 2px solid #45150d;
-  padding: 5px;
-  border-radius: 25px;
- }
+    padding: 5px;
+    border-radius: 25px;
+}
 
 .cardapio {
-    
+
     font-size: 3rem;
     color: #45150d;
     text-transform: uppercase;
 }
 
 .itens-cardapio {
-    
+
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -206,7 +213,7 @@
     height: 400px;
 }
 
-.logo-superior:hover{ 
+.logo-superior:hover {
     cursor: pointer;
     background-color: #3333;
     color: #ff7606;
@@ -303,12 +310,12 @@ button:hover {
     background-color: #ff7606;
 }
 
-.btn-pedido{
+.btn-pedido {
     font-size: 20px;
     background-color: #00518b;
     border: 2px solid #45150d;
-  padding: 5px;
-  border-radius: 25px;
+    padding: 5px;
+    border-radius: 25px;
 }
 
 .step {
@@ -431,10 +438,10 @@ div.scrollmenu a {
 .parallax {
     /* The image used */
     background-image: url("batutta.png");
-  
+
     /* Set a specific height */
-    max-width:200px;
-    max-height:400px;
+    max-width: 200px;
+    max-height: 400px;
     width: auto;
     height: auto;
     /* Create the parallax scrolling effect 
@@ -442,8 +449,8 @@ div.scrollmenu a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;*/
-  }
-  
+}
+
 
 
 #spaceText {
@@ -463,10 +470,10 @@ div.scrollmenu a {
     align-items: center;
 }
 
-.textDiv{
-   color: #fff;
+.textDiv {
+    color: #fff;
 }
 
-.text-pedido-final{
+.text-pedido-final {
     font-weight: bold;
 }
