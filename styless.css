@@ -69,8 +69,8 @@
 }
 
 .first-section {
-height: 85vh;
-background-image: linear-gradient(rgba(29,29,29,0.8), rgba(29,29,29,0.8)) ,url("batutta.png");
+height: 75vh;
+background-image: linear-gradient(rgba(29,29,29,0.8), rgba(29,29,29,0.8)) ,url("batutta.png2.png");
 background-position: center center;
 background-size: cover;
 width: 100vw;
@@ -89,14 +89,14 @@ align-items: center;
 
 .first-section h1 {
     color: #ff7606;
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
 .first-section h2 {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 3rem;
