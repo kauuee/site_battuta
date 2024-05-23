@@ -22,7 +22,7 @@
     align-items: center;
     background-color: #00518b;
     background-image: -moz-linear-gradient(#ff7606, #00518b);
-    background-image: -webkit-linear-gradient(#45150d, #800000);
+    background-image: -webkit-linear-gradient(#45150d );
     position: fixed;
     padding-left: 30rem;
 
@@ -103,7 +103,7 @@ align-items: center;
 }
 
 .first-section h3 {
-    color: #00518b;
+    color: #ff7606;
 }
 
 .first-section img {
@@ -149,7 +149,7 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #D2691E;
+    background-image: linear-gradient(to bottom, #D2691E, #D2691E);
 }
 
 .background-values {
